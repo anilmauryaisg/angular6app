@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+.content-class{
+	margin: 100px 0;
+	overflow: hidden;
+}
+
+.starter-template {
+    margin: 51px auto;    
+    text-align: center;
+    padding: 100px 0;
+    width: 800px;
+    overflow: hidden;
+}
+
+.starter-template h1 {
+	font-size: 50px;
+}
+
+
+.fav-product{
+	
+}
+
+footer{
+    background: #222;
+    overflow: hidden;
+    margin-top: 50px;
+    padding: 50px 0 30px 0;
+}
+
+.padding-0 {
+	padding: 0;
+}
+
+
+.col-sm-12.copyright {
+    background: #222;
+    border-top: 1px solid;
+    height: 30px;
+}
+
+.col-sm-12.copyright p{
+    line-height: 30px;
+    color: #FFF;
+    padding: 0;
+    margin: 0;	
+}
+
+footer ul {
+	padding:0;
+	margin: 0;
+	list-style:none;
+}
+
+footer ul li a{
+	color: #eee;
+}
+
+footer ul li a:hover{
+	color: #FFF;
+}
