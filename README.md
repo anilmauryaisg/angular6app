@@ -56,7 +56,7 @@ Replace with :
 <app-footer></app-footer>
 ```
 
-3.) add bootstrap cdn in src/index.html file just before </head>.
+3.) add bootstrap cdn in src/index.html file just before /head.
 
 ```HTML
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -64,7 +64,8 @@ Replace with :
 
 
 4.) open /src/app/header/header.component.html
-Replace with following
+
+Replace with following script
 ```HTML
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -89,6 +90,8 @@ Replace with following
 ```
 
 5.) open /src/app/footer/footer.component.html
+
+Replace with following script
 
 ```HTML
 <div class="container-fluid padding-0">
@@ -133,6 +136,8 @@ Replace with following
 ```
 
 6.) open /src/app/home/home.component.html
+
+Replace with following script
 
 ```HTML
 <div class="container-fluid" style="background: #f7f6f6;">
@@ -188,6 +193,8 @@ Replace with following
 ```
 
 6.) open /src/app/app-routing.module.ts
+
+Replace with following script
 
 ```HTML
 import { NgModule } from '@angular/core';
