@@ -48,7 +48,7 @@ and hit enter after every command
 
 2.) open src/app/app.component.html file
 
-Replace every thing with :  
+Replace with :  
 
 ```HTML
 <app-header></app-header>
@@ -56,7 +56,7 @@ Replace every thing with :
 <app-footer></app-footer>
 ```
 
-3.) add bootstrap cnd in src/index.html file just before /head .
+3.) add bootstrap cdn in src/index.html file just before </head>.
 
 ```HTML
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -75,13 +75,13 @@ Replace with following
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Project name</a>
+      <a class="navbar-brand" routerLink="/">Indydesk CRM</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li routerLinkActive="active"><a  routerLink="/home">Home</a></li>
+        <li routerLinkActive="active"><a  routerLink="/about-us">About</a></li>
+        <li routerLinkActive="active"><a  routerLink="/contact-us">Contact</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -91,43 +91,103 @@ Replace with following
 5.) open /src/app/footer/footer.component.html
 
 ```HTML
-<div class="container-fluid">
-	<footer>
-		<p class="text-center">copyright&copy; indydesk.com</p>
-	</footer>
+<div class="container-fluid padding-0">
+  <footer>
+    <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <ul>
+          <li><a href="javascript:void(0);">Home</a></li>
+          <li><a href="javascript:void(0);">About Us</a></li>
+          <li><a href="javascript:void(0);">Contact Us</a></li>
+          <li><a href="javascript:void(0);">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4">
+        <ul>
+          <li><a href="javascript:void(0);">Home</a></li>
+          <li><a href="javascript:void(0);">About Us</a></li>
+          <li><a href="javascript:void(0);">Contact Us</a></li>
+          <li><a href="javascript:void(0);">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4">
+        <ul>
+          <li><a href="javascript:void(0);">Home</a></li>
+          <li><a href="javascript:void(0);">About Us</a></li>
+          <li><a href="javascript:void(0);">Contact Us</a></li>
+          <li><a href="javascript:void(0);">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+      
+  </footer>
+  <div class="col-sm-12 copyright">
+    <p class="text-center">copyright&copy; indydesk.com</p>
+  </div>
+
 </div>
 ```
 
 6.) open /src/app/home/home.component.html
 
 ```HTML
-<div class="container-fluid">
+<div class="container-fluid" style="background: #f7f6f6;">
 
   <div class="starter-template">
-  	<div class="col-sm-12">
-	    <h1>Manage your business, easily with Indydesk</h1>
-	    <p>Try our Secure, Simple, Easy business tool to Manage Your Project, Tasks, Employees.</p>
-	</div>
+    <div class="col-sm-12">
+      <h1>Manage your business, easily</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+      <button class="btn btn-lg btn-primary">Get Started</button>
   </div>
+  </div>
+</div>
+<div class="container">
+  <div class="fav-product">
+     <div class="row">
+          <h1 class="text-center" style="margin: 30px 0; text-decoration: underline;">Popular Products</h1>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+         </div>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div>
+    </div>
 
+     <div class="row">
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+         </div>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </div>
+    </div>
+</div>
 </div>
 ```
-6.) open /src/app/home/home.component.scss
-```HTML
-.starter-template {
-    margin: 51px auto;    
-    text-align: center;
-    padding: 100px 0;
-    width: 800px;
-}
 
-.starter-template h1 {
-	font-size: 50px;
-
-}
-```
-
-7.) open /src/app/app-routing.module.ts
+6.) open /src/app/app-routing.module.ts
 
 ```HTML
 import { NgModule } from '@angular/core';
