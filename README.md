@@ -29,8 +29,11 @@ ng serve --open
 
 http://localhost:4200/
 
+
+
 <h1>Customize Application</h1>
 
+<p>Open another command window:</p>
 
 1.) Generate New Component : 
 
